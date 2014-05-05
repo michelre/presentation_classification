@@ -1,0 +1,34 @@
+ul{
+	line-height: 2cm !important;
+}
+
+#decision-tree ul, #naive-bayes ul{	
+	border: 1px solid rgb(184, 177, 177);
+	margin-bottom: 40px;
+	box-shadow: 2px 2px 12px grey;
+	border-radius: 5px 5px;
+	list-style: none;
+	padding-left: 20px;
+}
+
+#decision-tree .info-text, #naive-bayes .info-text{
+	position: absolute;
+	font-weight: bolder;
+	color: red;
+	top: -10px;
+	right: -40px;
+	-webkit-transform: rotate(30deg);
+	font-size: 25px;
+}
+
+
+#decision-tree img, #naive-bayes img{
+	border: none;
+	box-shadow: none;
+}
+
+
+#definition .container{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
