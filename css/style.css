@@ -2,7 +2,7 @@ ul{
 	line-height: 2cm !important;
 }
 
-#decision-tree ul, #naive-bayes ul{	
+#decision-tree ul, #naive-bayes ul, #svm ul{	
 	border: 1px solid rgb(184, 177, 177);
 	margin-bottom: 40px;
 	box-shadow: 2px 2px 12px grey;
@@ -11,7 +11,7 @@ ul{
 	padding-left: 20px;
 }
 
-#decision-tree .info-text, #naive-bayes .info-text{
+#decision-tree .info-text, #naive-bayes .info-text, #svm .info-text{
 	position: absolute;
 	font-weight: bolder;
 	color: red;
@@ -22,7 +22,7 @@ ul{
 }
 
 
-#decision-tree img, #naive-bayes img{
+#decision-tree img, #naive-bayes img, #svm img{
 	border: none;
 	box-shadow: none;
 }
