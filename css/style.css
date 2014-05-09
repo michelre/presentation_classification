@@ -27,6 +27,18 @@ ul{
 	box-shadow: none;
 }
 
+#method-proba img{
+	border: 1px solid rgb(180, 177, 177);
+	box-shadow: none;
+	border-radius: 14px 14px;
+
+}
+
+#hook img{
+	border: 1px solid rgb(180, 177, 177);
+	box-shadow: none;
+	margin-right: 10px;
+}
 
 #definition .container{
 	margin-top: 40px;

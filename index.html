@@ -27,6 +27,14 @@
 				link.href = 'css/print/pdf.css';
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+			 
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next(); 
+				if(e.button === 2) Reveal.prev(); 
+			}
 		</script>
 	</head>
 
@@ -46,25 +54,47 @@
 				</section>
 				<section id="hook">
 					<h2>Le problème</h2>
-					<h3>Comment retrouver un objet?</h3>					
+					<div class="container-fluid">
+						<div class="row">
+							<img class="col-md-7 fragment" src="img/data-growth.png" data-fragment-index="3"/>				
+							<div class="row">
+								<img class="col-md-4 fragment" src="img/devices-connected-growth.png" data-fragment-index="1"/>
+								<img class="col-md-4 fragment" src="img/storage-means.png" data-fragment-index="2"/>
+							</div>																						
+						</div>
+						<div class="row">
+							<h3 class="fragment" data-fragment-index="4">Comment retrouver un objet?</h3>
+						</div>
+					</div>										
 				</section>
 				<section id="definition">					
 					<h2>La classification</h2>
 						<ul>
-							<li>Système de classement</li>
-							<li>Ranger des objets dans différentes catégories</li>
+							<li class="fragment" data-fragment-index="1">Système de classement</li>
+							<li class="fragment" data-fragment-index="2">Ranger des objets dans différentes catégories</li>
 						</ul>						
-						<div class="container">
+						<div class="container fragment" data-fragment-index="3">
 							<div class="row">
 								<i class="col-md-3 fa fa-book fa-3x"></i>
 								<i class="col-md-3 fa fa-film fa-3x"></i>
 								<i class="col-md-3 fa fa-music fa-3x"></i>								
 							</div>
 						</div>
-						<h3>Automatisation ????</h3>
+						<h3 class="fragment" data-fragment-index="4">Automatisation ????</h3>
 				</section>
-				<section id="structure">
-					<h2>Structure</h2>
+
+				<section id="comment">
+					<h2>Comment?</h2>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Méthode déterministe</li>
+						<li class="fragment" data-gragment-index="2">Méthode probabilistique</li>
+					</ul>
+				</section>
+
+				<section id="method-proba">
+					<h2>Approche probabilistique</h2>
+					<img data-fragment-index="1" class="col-md-12 fragment" src="img/supervised-classification-1.png"/>
+					<img data-fragment-index="2" class="col-md-12 fragment" src="img/supervised-classification-2.png"/>
 				</section>
 				<section id="decision-tree">
 					<h2>Arbres de décision</h2>
@@ -152,16 +182,16 @@
 				<section id="indicators">
 					<h2>Evaluation du modèle</h2>
 					<ul>
-						<li>Précision</li>
-						<li>Matrices de confusion</li>
-						<li>Cross-Validation</li>
+						<li class="fragment" data-fragment-index="1">Précision</li>
+						<li class="fragment" data-fragment-index="2">Matrices de confusion</li>
+						<li class="fragment" data-fragment-index="3">Cross-Validation</li>
 					</ul>
 				</section>
 				<section id="tools">
 					<h2>Quelques outils</h2>
 					<ul>
-						<li>Natural Language Toolkit (NLTK)</li>
-						<li>Scikit Learn</li>
+						<li class="fragment" data-fragment-index="1">Natural Language Toolkit (NLTK)</li>
+						<li class="fragment" data-fragment-index="2">Scikit Learn</li>
 					</ul>
 				</section>
 				<section id="conclusion">
