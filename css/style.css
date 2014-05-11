@@ -34,13 +34,53 @@ ul{
 
 }
 
+#models-1 .row {
+	margin-top: 30px;
+}
+
+#models-1 .row div:first-child{
+	border-right: 1px solid black;
+}
+
+#models-1 i{
+	display: block;
+	margin: 30px;	
+	text-align: left;
+}
+
+#models-1 img{
+	border: 1px solid #b1b2ad;
+	margin-left: 110px;
+}
+
 #hook img{
 	border: 1px solid rgb(180, 177, 177);
 	box-shadow: none;
-	margin-right: 10px;
+	margin-left: 20px;
+}
+
+#hook{
+	font-size: 30px;
 }
 
 #definition .container{
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
+
+#indicators img{
+	height: 300px;
+}
+
+
+#conclusion #svm{ position: absolute; top: 0px; left: 0px;}
+#conclusion #naive-bayes{ position: absolute; top: 70px; left: 110px;}
+#conclusion #training-set{ position: absolute; top: 0px; right: 0;}
+#conclusion #features{ position: absolute; top: 100px; right: 20px;}
+#conclusion #test-set{ position: absolute; top: 150px; left: 20px;}
+#conclusion #classifier{ position: absolute; top: 100px; left: 500px;}
+#conclusion #decision-tree{ position: absolute; top: 175px; left: 300px;}
+#conclusion #nltk{ position: absolute; top: 250px; left: 50px;}
+#conclusion #scikit-learn{ position: absolute; top: 200px; right: 100px;}
+#conclusion #confusion-matrix{ position: absolute; top: 275px; left: 200px;}
+#conclusion #cross-validation{ position: absolute; top: 300px; right: 50px;}

@@ -56,11 +56,11 @@
 					<h2>Le problème</h2>
 					<div class="container-fluid">
 						<div class="row">
-							<img class="col-md-7 fragment" src="img/data-growth.png" data-fragment-index="3"/>				
-							<div class="row">
-								<img class="col-md-4 fragment" src="img/devices-connected-growth.png" data-fragment-index="1"/>
-								<img class="col-md-4 fragment" src="img/storage-means.png" data-fragment-index="2"/>
-							</div>																						
+							<ul class="col-md-4">
+								<li class="fragment" data-fragment-index="1">+ d'appareils connectés</li>
+								<li class="fragment" data-fragment-index="2">+ de moyens de stockage</li>
+							</ul>
+							<img class="col-md-7 fragment" src="img/data-growth.png" data-fragment-index="3"/>
 						</div>
 						<div class="row">
 							<h3 class="fragment" data-fragment-index="4">Comment retrouver un objet?</h3>
@@ -85,9 +85,10 @@
 
 				<section id="comment">
 					<h2>Comment?</h2>
+					<h3>2 méthodes:</h3>
 					<ul>
-						<li class="fragment" data-fragment-index="1">Méthode déterministe</li>
-						<li class="fragment" data-gragment-index="2">Méthode probabilistique</li>
+						<li class="fragment" data-fragment-index="2">Méthode déterministe</li>
+						<li class="fragment" data-gragment-index="1">Méthode probabilistique</li>
 					</ul>
 				</section>
 
@@ -96,94 +97,43 @@
 					<img data-fragment-index="1" class="col-md-12 fragment" src="img/supervised-classification-1.png"/>
 					<img data-fragment-index="2" class="col-md-12 fragment" src="img/supervised-classification-2.png"/>
 				</section>
-				<section id="decision-tree">
-					<h2>Arbres de décision</h2>
-					<div class="container">
-						<div class="row">							
-							<ul class="col-md-5">
-								<li class="info-text">PRINCIPE ?</li>
-								<li>Diagramme</li>
-								<li>1 noeud = 1 décision</li>
-								<li>1 feuille = 1 label</li>
-								<li><img class="col-md-12" src="img/decision-tree.png"/></li>
-							</ul>
-							<ul class="col-md-5">
-								<li class="info-text">AVANTAGES</li>
-								<li>Intuitif</li>
-								<li>Simple</li>								
-							</ul>
-							<ul class="col-md-5">
-								<li class="info-text">INCOVÉNIENTS</li>
-								<li>Division du training set</li>
-								<li>Overfitting</li>
-								<li>Organisation hiérarchique</li>								
-							</ul>
-							<ul class="col-md-5">
-								<li class="info-text">UTILISATIONS</li>
-								<li>Biologie</li>
-							</ul>
+				<section id="models-1">
+					<h2>Modèles</h2>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<h3 class="fragment" data-fragment-index="1">Génératifs</h3>
+								<i class="fragment" data-fragment-index="3">Calcul de probabilités conditionnelles des différentes features</i>
+								<b class="fragment" data-fragment-index="4">Ex: Naïve-Bayes</b>								
+								<img class="col-md-7 fragment" src="img/naive-bayes.png" data-fragment-index="4"/>
+							</div>
+							<div class="col-md-6">
+								<h3 class="fragment" data-fragment-index="2">Discriminants</h3>
+								<i class="fragment" data-fragment-index="5">Etablir des combinaisons linéaires entre les données</i>
+								<b class="fragment" data-fragment-index="6">Ex: Séparateurs à Vaste Marge (SVM)</b><br/>
+								<img class="col-md-7 fragment" src="img/svm.png" data-fragment-index="6"/>
+							</div>							
 						</div>
 					</div>
 				</section>
-				<section id="naive-bayes">
-					<h2>Naïve-Bayes</h2>
-					<div class="container">
-						<div class="row">							
-							<ul class="col-md-5">
-								<li class="info-text">PRINCIPE ?</li>
-								<li>Modèle Probabilisatique</li>
-								<li>Probabilité conditionnelle</li>
-								<li>Indépendance des features</li>
-								<li><img class="col-md-12" src="img/decision-tree.png"/></li>
-							</ul>
-							<ul class="col-md-5">
-								<li class="info-text">AVANTAGES</li>
-								<li>Facilement programmable</li>
-								<li>Rapide</li>
-							</ul>
-							<ul class="col-md-5">
-								<li class="info-text">INCOVÉNIENTS</li>
-								<li>Intéractions entre features</li>								
-							</ul>
-							<ul class="col-md-5">
-								<li class="info-text">UTILISATIONS</li>
-								<li>Emails</li>
-								<li>Classification de documents</li>
-							</ul>
-						</div>
-					</div>
+				<section id="models-2">
+					<h2>Lequel choisir?</h2>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Précision</li>
+						<li class="fragment" data-fragment-index="2">Quantité / qualité des données</li>
+						<li class="fragment" data-fragment-index="3">Ressources disponibles</li>
+					</ul>
 				</section>
-				<section id="svm">
-					<h2>Machines à vecteur de support (SVM)</h2>
-					<div class="container">
-						<div class="row">							
-							<ul class="col-md-5">
-								<li class="info-text">PRINCIPE ?</li>
-								<li>...</li>
-								<li>...</li>
-								<li><img class="col-md-12" src="img/decision-tree.png"/></li>
-							</ul>
-							<ul class="col-md-5">
-								<li class="info-text">AVANTAGES</li>
-								<li>Haute précision</li>
-							</ul>
-							<ul class="col-md-5">
-								<li class="info-text">INCOVÉNIENTS</li>
-								<li>Interprétation difficile</li>
-								<li>Assez gourmand</li>
-							</ul>
-							<ul class="col-md-5">
-								<li class="info-text">UTILISATIONS</li>
-								<li>Classification de textes</li>
-							</ul>
-						</div>
-					</div>
-				</section>
+
+
 				<section id="indicators">
 					<h2>Evaluation du modèle</h2>
 					<ul>
 						<li class="fragment" data-fragment-index="1">Précision</li>
-						<li class="fragment" data-fragment-index="2">Matrices de confusion</li>
+						<li class="fragment" data-fragment-index="2">
+							<p>Matrices de confusion</p>
+							<img class="fragment" src="img/confusion-matrix.png" data-fragment-index="2"/>
+						</li>
 						<li class="fragment" data-fragment-index="3">Cross-Validation</li>
 					</ul>
 				</section>
@@ -196,6 +146,17 @@
 				</section>
 				<section id="conclusion">
 					<h2>Conclusion</h2>
+					<i id="svm">SVM</i>
+					<i id="naive-bayes">Naïve-Bayes</i>
+					<i id="training-set">Training Set</i>
+					<i id="features">Features</i>
+					<i id="test-set">Test Set</i>
+					<i id="classifier">Classifieur</i>
+					<i id="decision-tree">Arbre de décision</i>
+					<i id="nltk">NLTK</i>
+					<i id="scikit-learn">Scikit Learn</i>
+					<i id="confusion-matrix">Matrices de confusion</i>
+					<i id="cross-validation">Cross-Validation</i>
 				</section>
 
 
